@@ -13,7 +13,7 @@ const Footer = () => {
   };
   return (
     <>
-      <footer className="w-full">
+      <div className="w-full">
         <div className="absolute right-24 my-5">
           <Button
             className={""}
@@ -26,7 +26,7 @@ const Footer = () => {
         <div className="w-full bg-primary">
             
         </div>
-      </footer>
+      </div>
     </>
   );
 };
