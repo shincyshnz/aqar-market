@@ -4,36 +4,17 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Container } from "./Shared/Container";
 import { FaBars, FaSignInAlt, FaTimes } from "react-icons/fa";
+import { NAV_LINKS } from "./Constants/constants";
 
 const Navigation = () => {
   const [nav, setNav] = useState(false);
 
-  const links = [
-    {
-      id: 1,
-      link: "home",
-    },
-    {
-      id: 2,
-      link: "property",
-    },
-    {
-      id: 3,
-      link: "agent",
-    },
-    {
-      id: 4,
-      link: "contact",
-    },
-  ];
-
   return (
-    <header>
-      <div className="font-poppins flex justify-between items-center h-[110px] mx-[20px] py-[5px] lg:mx-56 lg:py-[15px] sticky">
+      <div className="font-poppins flex justify-between items-center gap-1 h-[95px] md:h-[110px] mx-2 md:mx-[20px] py-[5px] lg:mx-56 lg:py-[15px] sticky">
         <div className="logo">
-          <h1 className="w-[120px]">
+          <h1 className="md:w-[120px]">
             <a
-              className="text-secondary-blue font-[800] text-[32px] leading-9"
+              className="text-secondary-blue font-[800] text-lg md:text-[32px] md:leading-9"
               href="#"
               target="_blank"
               rel="noreferrer"
@@ -44,8 +25,8 @@ const Navigation = () => {
         </div>
 
         {/* links */}
-        <ul className="hidden md:flex md:gap-2 lg:gap-8">
-          {links.map(({ id, link }) => (
+        <ul className="hidden md:flex md:gap-2 lg:gap-8 ml-12 lg:ml-0">
+          {NAV_LINKS.map(({ id, link }) => (
             <li
               key={id}
               className="nav-links cursor-pointer capitalize text-[16px] font-semibold text-gray-one hover:text-secondary-blue duration-200"
@@ -56,8 +37,8 @@ const Navigation = () => {
         </ul>
 
         {/* buttons */}
-        <div className="flex items-center justify-end gap-4">
-          <button className="flex-center gap-3 text-black-one">
+        <div className="w-full flex items-center justify-end gap-1 md:gap-4 mr-1 md:mr-0">
+          <button className="w-1/2 flex-center gap-2 md:gap-3 text-black-one">
             <svg
               width="18"
               height="18"
@@ -70,16 +51,16 @@ const Navigation = () => {
                 fill="#0F0F0F"
               />
             </svg>
-            <span>SIGN IN</span>
+            <span className="text-sm md:text-base">SIGN IN</span>
           </button>
-          <button className="w-[153px] bg-secondary-blue px-5 py-3 rounded-[10px] text-sm text-white">
+          <button className="w-1/2 max-w-[153px] bg-secondary-blue px-1 py-[5px] md:px-5 md:py-3 rounded-[10px] text-[12px] md:text-sm text-white">
             Add Property
           </button>
         </div>
 
         <div
           onClick={() => setNav(!nav)}
-          className="cursor-pointer pr-4 z-10 text-secondary-blue md:hidden"
+          className="cursor-pointer z-10 text-secondary-blue md:hidden px-4"
         >
           {nav ? (
             <FaTimes size={30} className="text-primary-blue" />
@@ -89,11 +70,11 @@ const Navigation = () => {
         </div>
 
         {nav && (
-          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-secondary-blue to-primary-blue text-white">
-            {links.map(({ id, link }) => (
+          <ul className="flex flex-col justify-center items-center absolute w-full h-screen top-0 left-0 bg-gradient-to-b from-secondary-blue to-primary-blue text-white">
+            {NAV_LINKS.map(({ id, link }) => (
               <li
                 key={id}
-                className="px-4 cursor-pointer capitalize py-6 text-4xl"
+                className="px-4 cursor-pointer capitalize py-6 text-3xl"
               >
                 <Link onClick={() => setNav(!nav)} href={link}>
                   {link}
@@ -103,7 +84,6 @@ const Navigation = () => {
           </ul>
         )}
       </div>
-    </header>
   );
 };
 

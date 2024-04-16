@@ -12,7 +12,7 @@ export default async function Page() {
   return (
     <>
       <main>
-        <Carousel images={images} />
+        {/* <Carousel images={images} /> */}
       </main>
     </>
   );
