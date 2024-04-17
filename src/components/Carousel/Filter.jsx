@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import Button from "./Shared/Button";
+import Button from "../Shared/Button";
 
 const Filter = () => {
   const handleClick = () => { };
@@ -93,7 +93,7 @@ const Filter = () => {
 
         <div className="max-w-[900px] px-3 font-poppins relative text-center text-white">
           <div className="absolute max-w-[225px] p-3 xl:left-3 lg:-left-14 lg:-top-20 -top-5">
-            <img src="/circle.svg" alt="dotted-circle" className="object-contain w-1/3 md:w-[150px] 2xl:w-full lg:max-w-[225px]" />
+            <img src="/icons/circle.svg" alt="dotted-circle" className="object-contain w-1/3 md:w-[150px] 2xl:w-full lg:max-w-[225px]" />
           </div>
           <h1 className="text-4xl lg:text-[62px] 2xl:text-[82px] font-[800] tracking-wide xl:leading-3">Find your dream</h1>
           <h1 className="ml-9 text-4xl lg:text-[62px] 2xl:text-[82px] font-[800] lg:mt-10 leading-0">House here</h1>
@@ -161,7 +161,7 @@ const Filter = () => {
           <Button
             classname="p-3 border-2 border-white rounded-lg text-white"
             text={"Experience The Journey"}
-            icons={<img src="play-icon.svg" alt="play-icon"/>}
+            icons={<img src="/icons/play-icon.svg" alt="play-icon"/>}
             onClick={handleClick} // Make sure handleClick is defined
           />
         </div>

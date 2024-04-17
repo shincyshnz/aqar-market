@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { Container } from "./Shared/Container";
-import Button from "./Shared/Button";
+import { Container } from "../Shared/Container";
+import Button from "../Shared/Button";
 
 const Footer = () => {
   const handleScrollTop = () => {
@@ -18,7 +18,7 @@ const Footer = () => {
           <Button
             className={"w-[25px] 2xl:w-[55px]"}
             text=""
-            icons={<img src="scroll-top.svg" alt="scroll-top" />}
+            icons={<img src="/icons/scroll-top.svg" alt="scroll-top" />}
             onClick={handleScrollTop}
           />
         </div>
@@ -27,14 +27,14 @@ const Footer = () => {
           <div className="flex-1 flex justify-center items-center gap-1 max-h-[70px]">
             <Button
               classname="flex justify-center items-center p-2 border-[1px] border-gray-400 rounded-md font-[600] text-[10px] 2xl:text-[20px]"
-              icons={<img src="apple-icon.svg" alt="apple-icon" className="w-10 max-w-[40px]" />}
+              icons={<img src="/icons/apple-icon.svg" alt="apple-icon" className="w-10 max-w-[40px]" />}
               text={<div className="flex flex-col items-start">
                 <span>Available on the </span>
                 <span className="text-[8px] 2xl:text-base font-sans font-[400]">Google play</span>
               </div>} />
             <Button
               classname="flex justify-center items-center p-2 border-[1px] border-gray-400 rounded-md font-[600] text-[10px] 2xl:text-[20px]"
-              icons={<img src="play-store-icon.svg" alt="play-store-icon" className="w-10 max-w-[40px]" />}
+              icons={<img src="/icons/play-store-icon.svg" alt="play-store-icon" className="w-10 max-w-[40px]" />}
               text={<div className="flex flex-col items-start">
                 <span>Available on the </span>
                 <span className="text-[8px] 2xl:text-base font-sans font-[400]">AppStore</span>

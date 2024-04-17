@@ -1,7 +1,7 @@
 import { Poppins, Open_Sans, Roboto } from "next/font/google";
 import "./globals.css";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer/Footer";
+import Navigation from "@/components/Navigation/Navigation";
 
 // Define Poppins font with specific configurations
 const poppins = Poppins({

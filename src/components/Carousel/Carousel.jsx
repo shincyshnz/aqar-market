@@ -105,16 +105,15 @@ const Carousel = ({ images }) => {
 
         <div className="absolute w-full h-full top-0 right-0 rounded-[40px] bg-gradient-to-t from-[#000000e5] to-transparent"></div>
         <div className="absolute px-2 flex justify-center w-full top-0 h-full rounded-[40px] bg-gradient-to-t from-[#22577b4a] to-transparent">
-        {/* <div className="absolute px-2 flex justify-center w-full top-0 h-full rounded-[40px] bg-gradient-to-b from-rgba-15-15-15-0 to-rgba-34-87-123-1"> */}
           <Filter />
         </div>
 
         <div className="absolute z-10 top-[45%] right-0 flex flex-col">
           <button className="mb-2 w-10 max-w-[60px]" onClick={prevSlide}>
-            <img src="/left-arrow.svg" alt="previous-arrow" className="object-scale-down" />
+            <img src="/icons/left-arrow.svg" alt="previous-arrow" className="object-scale-down" />
           </button>
           <button className="w-10 max-w-[60px]" onClick={nextSlide}>
-            <img src="/right-arrow.svg" alt="right-arrow" className="object-scale-down" />
+            <img src="/icons/right-arrow.svg" alt="right-arrow" className="object-scale-down" />
           </button>
         </div>
       </div>

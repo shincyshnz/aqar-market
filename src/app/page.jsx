@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { IMAGES } from "@/Constants/constants";
-import Carousel from "@/components/Carousel";
+import Carousel from "@/components/Carousel/Carousel";
 import { Container } from "@/components/Shared/Container";
 import Title from "@/components/Shared/Title";
 
@@ -10,12 +10,12 @@ export default async function Page() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % IMAGES.length);
   };
 
   const prevSlide = () => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+      (prevIndex) => (prevIndex - 1 + IMAGES.length) % IMAGES.length
     );
   };
 
@@ -47,15 +47,34 @@ export default async function Page() {
                   them.
                 </p>
                 <div className="flex items-center gap-1 mt-4">
-                    <button className="w-10 max-w-[60px]" onClick={prevSlide}>
-                      <img src="/left-arrow.svg" alt="previous-arrow" className="object-scale-down rounded-full bg-[#D4DCFF]" />
-                    </button>
-                    <button className="w-10 max-w-[60px]" onClick={nextSlide}>
-                      <img src="/right-arrow.svg" alt="right-arrow" className="object-scale-down rounded-full bg-[#D4DCFF]" />
-                    </button>
+                  <button className="w-10 max-w-[60px]" onClick={prevSlide}>
+                    <img src="/icons/left-arrow.svg" alt="previous-arrow" className="object-scale-down rounded-full bg-[#D4DCFF]" />
+                  </button>
+                  <button className="w-10 max-w-[60px]" onClick={nextSlide}>
+                    <img src="/icons/right-arrow.svg" alt="right-arrow" className="object-scale-down rounded-full bg-[#D4DCFF]" />
+                  </button>
                 </div>
               </div>
-              <div className="w-full"></div>
+
+
+              {/* /////// */}
+
+              <div className="relative overflow-hidden max-w-[1820px] md:h-auto rounded-[40px]">
+                <div className="flex justify-center transition duration-300 transform" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+
+                  {IMAGES.map((image, index) => (
+                    <img
+                      key={index}
+                      src={image}
+                      alt={`slide-${index}`}
+                      className="object-cover w-full"
+                    />
+                  ))}
+                </div>
+              </div>
+
+              {/* /////////// */}
+
             </div>
           </Container>
         </section>
