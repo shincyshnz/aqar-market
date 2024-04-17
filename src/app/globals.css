@@ -11,6 +11,10 @@
 }
 
 @layer utilities {
+  body{
+    @apply font-poppins;
+  }
+
   .flex-center {
     display: flex;
     justify-content: center;

@@ -87,18 +87,18 @@ const Filter = () => {
     //   </div>
     // </div>
 
-    <div className="flex h-full flex-col mx-auto px-1 py-5 lg:px-8 max-w-screen-md font-light">
+    <div className="flex h-full flex-col justify-center items-center mx-auto px-1 py-12 lg:px-8 max-w-screen-md font-light">
       {/* Heading */}
       <div className="w-full relative mt-10 lg:mt-20">
 
-        <div className="max-w-[900px] font-poppins relative text-center text-white">
-          <div className="absolute max-w-[225px] p-3 left-20 lg:-left-14 lg:-top-20 -top-5">
-            <img src="/circle.svg" alt="dotted-circle" className="object-contain w-1/3 lg:w-full lg:max-w-[225px]" />
+        <div className="max-w-[900px] px-3 font-poppins relative text-center text-white">
+          <div className="absolute max-w-[225px] p-3 xl:left-3 lg:-left-14 lg:-top-20 -top-5">
+            <img src="/circle.svg" alt="dotted-circle" className="object-contain w-1/3 md:w-[150px] 2xl:w-full lg:max-w-[225px]" />
           </div>
-          <h1 className="text-4xl lg:text-[82px] font-[800]">Find your dream</h1>
-          <h1 className="ml-9 text-4xl lg:text-[82px] font-[800] lg:mt-10">House here</h1>
+          <h1 className="text-4xl lg:text-[62px] 2xl:text-[82px] font-[800] tracking-wide xl:leading-3">Find your dream</h1>
+          <h1 className="ml-9 text-4xl lg:text-[62px] 2xl:text-[82px] font-[800] lg:mt-10 leading-0">House here</h1>
         </div>
-        <div className="mt-4 text-center font-openSans text-white md:text-lg font-light tracking-wide leading-loose">
+        <div className="my-8 xl:px-8 text-center font-openSans text-white text-sm 2xl:text-[18px] font-light tracking-wide leading-0">
           <p>
             Morbi eget pharetra felis. Nam pulvinar tincidunt purus eget
             convallis. Nulla eget arcu vitae velit suscipit mattis. Quisque at
@@ -108,7 +108,7 @@ const Filter = () => {
       </div>
 
       {/* Filter */}
-      <div className="flex-1 mt-6 w-full">
+      <div className="flex-1 mt-6 w-full max-w-[600px]">
          <div className="flex flex-col justify-center px-5 py-2 h-auto lg:max-h-[335px] max-w-[723px] bg-primary-blue bg-opacity-80 rounded-[55px] border-2 border-white font-poppins tracking-wide">
          {/* Rent-buy */}
          <div className="flex justify-center  gap-4 md:gap-8 md:p-3 mb-4 text-xs lg:text-[16px]">
@@ -161,7 +161,7 @@ const Filter = () => {
           <Button
             classname="p-3 border-2 border-white rounded-lg text-white"
             text={"Experience The Journey"}
-            icons={"play-icon.svg"}
+            icons={<img src="play-icon.svg" alt="play-icon"/>}
             onClick={handleClick} // Make sure handleClick is defined
           />
         </div>

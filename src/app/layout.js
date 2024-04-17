@@ -1,4 +1,4 @@
-import { Poppins, Open_Sans } from "next/font/google";
+import { Poppins, Open_Sans, Roboto } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -17,6 +17,13 @@ const openSans = Open_Sans({
   variable: '--font-opensans',
 })
 
+const roboto = Roboto({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto", 
+  weight: ["100", "300", "400", "500", "700", "900"],
+});
+
 export const metadata = {
   title: "Aqar Market",
   description: "Find your dream house here",
@@ -26,11 +33,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.variable} mx-auto w-full max-w-[1920px] overflow-x-hidden`}>
-        {/* Navbar */}
         <Navigation />
         {children}
-        {/* Footer */}
-        {/* <Footer /> */}
+        <Footer />
         </body>
     </html>
   );

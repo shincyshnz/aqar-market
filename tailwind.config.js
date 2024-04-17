@@ -19,6 +19,7 @@ export const theme = {
       'gray-two': '#949499',
       'gray-three': '#A6A6A6',
       'gray-four': '#63747C',
+      'gray-five' : '#3C3C44',
       'black-one': '#0F0F0F',
       'bg-gray': '#E7E7E7',
       'rgba-15-15-15-0': 'rgba(15, 15, 15, 0)',

@@ -10,11 +10,11 @@ const Navigation = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="sticky z-50 font-poppins flex justify-between items-center gap-1 h-[95px] md:h-[110px] md:mx-[20px] py-[5px] lg:mx-28 xl:mx-56 lg:py-[15px]">
+    <div className="text-xs 2xl:text-base sticky z-50 font-poppins flex items-center gap-1 h-[95px] 2xl:h-[110px] md:mx-[20px] py-[5px] lg:mx-28 2xl:mx-56 lg:py-[15px]">
       <div className="logo ml-2 md:ml-0">
         <h1 className="md:w-[120px]">
           <a
-            className="text-secondary-blue font-[800] text-lg md:text-[32px] md:leading-9"
+            className="text-secondary-blue font-[800] text-md xl:text-[32px] md:leading-9"
             href="#"
             target="_blank"
             rel="noreferrer"
@@ -24,12 +24,13 @@ const Navigation = () => {
         </h1>
       </div>
 
-      {/* links */}
-      <ul className="hidden md:flex md:gap-2 lg:gap-8 ml-12">
+      <div className="flex-1 flex justify-between items-center">
+        {/* links */}
+      <ul className="w-full hidden md:flex md:justify-center md:gap-2 lg:gap-8 ml-12">
         {NAV_LINKS.map(({ id, link }) => (
           <li
             key={id}
-            className="nav-links cursor-pointer capitalize text-[16px] font-semibold text-gray-one hover:text-secondary-blue duration-200"
+            className="nav-links cursor-pointer capitalize font-semibold text-gray-one hover:text-secondary-blue duration-200"
           >
             <Link href={link}>{link}</Link>
           </li>
@@ -37,7 +38,7 @@ const Navigation = () => {
       </ul>
 
       {/* buttons */}
-      <div className="w-full flex items-center justify-end gap-1 md:gap-4 mr-1 md:mr-0">
+      <div className="w-full lg:w-[40%] flex items-center gap-1 md:gap-4 mr-1 md:mr-0">
         <button className="w-1/2 flex-center gap-2 md:gap-3 text-black-one">
           <svg
             width="18"
@@ -51,9 +52,9 @@ const Navigation = () => {
               fill="#0F0F0F"
             />
           </svg>
-          <span className="text-sm md:text-base">SIGN IN</span>
+          <span className="">SIGN IN</span>
         </button>
-        <button className="w-1/2 max-w-[153px] bg-secondary-blue px-1 py-[5px] md:px-5 md:py-3 rounded-[10px] text-[12px] md:text-sm text-white">
+        <button className="w-full max-w-[153px] bg-secondary-blue px-1 py-[5px] md:px-5 md:py-3 rounded-[10px] text-white">
           Add Property
         </button>
       </div>
@@ -85,6 +86,7 @@ const Navigation = () => {
           ))}
         </ul>
       )}
+      </div>
       </div>
   );
 };
