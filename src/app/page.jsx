@@ -1,4 +1,3 @@
-// import Image from "next/image";
 
 import Carousel from "@/components/Carousel";
 
@@ -11,8 +10,8 @@ const images = [
 export default async function Page() {
   return (
     <>
-      <main>
-        {/* <Carousel images={images} /> */}
+      <main className="min-h-screen">
+        <Carousel images={images} />
       </main>
     </>
   );

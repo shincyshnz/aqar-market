@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <>
       <div className="w-full">
-        <div className="absolute right-24 my-5">
+        <div className="absolute right-1 lg:right-24 my-2 lg:my-5">
           <Button
             className={""}
             text=""

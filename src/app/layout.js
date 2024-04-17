@@ -25,13 +25,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} mx-auto`}>
+      <body className={`${poppins.variable} mx-auto w-full max-w-[1920px] overflow-x-hidden`}>
         {/* Navbar */}
         <Navigation />
         {children}
         {/* Footer */}
-        </body>
         <Footer />
+        </body>
     </html>
   );
 }
