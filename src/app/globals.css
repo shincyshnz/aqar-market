@@ -20,7 +20,8 @@
   .btn {
     padding-inline: 10px;
     padding-block: 8px;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-weight: 600;
     height: 40px;
     min-width: 125px;
     border-radius: 10px;

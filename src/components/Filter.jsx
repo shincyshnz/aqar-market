@@ -88,18 +88,18 @@ const Filter = () => {
     //   </div>
     // </div>
 
-    <div className="flex flex-col justify-center mx-auto px-4 py-5 sm:px-6 lg:px-8 max-w-screen-md font-light">
+    <div className="flex h-full flex-col mx-auto px-1 py-5 lg:px-8 max-w-screen-md font-light">
       {/* Heading */}
-      <div className="flex-1 w-full relative mt-10 lg:mt-20">
-        
-        <div className="max-w-[900px] relative text-center text-white text-2xl md:text-4xl lg:text-7xl leading-none font-extrabold tracking-wider">
-        <div className="absolute max-w-[225px] p-3 left-20 lg:-left-14 lg:-top-20 -top-5">
-          <img src="/circle.svg" alt="dotted-circle" className="object-contain w-1/3 lg:w-full lg:max-w-[225px]"/>
+      <div className="w-full relative mt-10 lg:mt-20">
+
+        <div className="max-w-[900px] font-poppins relative text-center text-white">
+          <div className="absolute max-w-[225px] p-3 left-20 lg:-left-14 lg:-top-20 -top-5">
+            <img src="/circle.svg" alt="dotted-circle" className="object-contain w-1/3 lg:w-full lg:max-w-[225px]" />
           </div>
-          <h1>Find your dream</h1>
-          <h1 className="ml-9">House here</h1>
+          <h1 className="text-4xl lg:text-[82px] font-[800]">Find your dream</h1>
+          <h1 className="ml-9 text-4xl lg:text-[82px] font-[800] lg:mt-10">House here</h1>
         </div>
-        <div className="mt-2 text-center font-openSans text-white text-[8px] md:text-lg font-extralight tracking-wide leading-loose">
+        <div className="mt-4 text-center font-openSans text-white md:text-lg font-light tracking-wide leading-loose">
           <p>
             Morbi eget pharetra felis. Nam pulvinar tincidunt purus eget
             convallis. Nulla eget arcu vitae velit suscipit mattis. Quisque at
@@ -109,40 +109,41 @@ const Filter = () => {
       </div>
 
       {/* Filter */}
-      {/* <div className="flex-1 bg-black w-full">
-        <div className="flex flex-col justify-center p-5 mx-auto max-h-[335px] max-w-[723px] bg-primary-blue bg-opacity-80 rounded-[55px] border-4 border-white font-poppins tracking-wide">
-          <div className="flex justify-center p-3 gap-4 md:gap-8 mb-4">
-            <button className="btn text-white bg-secondary-blue">RENT</button>
+      <div className="flex-1 mt-6 w-full">
+         <div className="flex flex-col justify-center px-5 py-2 h-auto lg:max-h-[335px] max-w-[723px] bg-primary-blue bg-opacity-80 rounded-[55px] border-2 border-white font-poppins tracking-wide">
+         {/* Rent-buy */}
+         <div className="flex justify-center  gap-4 md:gap-8 md:p-3 mb-4 text-xs lg:text-[16px]">
+            <button className="btn text-white bg-secondary-blue ">RENT</button>
             <button className="btn bg-white">BUY</button>
           </div>
-          <input
+           <input
             type="text"
             className="input w-full"
-            placeholder="Enter Location"
+            placeholder="Inter Location"
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-4 text-sm">
-            <div className="flex flex-col items-center">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 mt-4 text-sm">
+            <div className="flex flex-col justify-center">
               <label>Residential</label>
-              <select className="select mt-2">
+              <select className="select mt-2 w-full rounded-md p-2">
                 <option>Residential</option>
                 <option>Residential</option>
                 <option>Residential</option>
               </select>
             </div>
 
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col justify-center">
               <label>Beds/Bathrooms</label>
-              <select className="select mt-2">
+              <select className="select mt-2 w-full rounded-md p-2">
                 <option>00 Bed / 00 Bathroom</option>
                 <option>00 Bed / 00 Bathroom</option>
                 <option>00 Bed / 00 Bathroom</option>
               </select>
             </div>
 
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col justify-center">
               <label>Price</label>
-              <select className="select mt-2">
+              <select className="select mt-2 w-full rounded-md p-2">
                 <option>Price</option>
                 <option>Price</option>
                 <option>Price</option>
@@ -150,22 +151,23 @@ const Filter = () => {
             </div>
           </div>
 
-          <div className="flex justify-center mt-4">
-            <button className="btn text-white bg-secondary-blue">
+          <div className="flex justify-center mt-4 mb-2">
+            <button className="btn w-1/3 text-white text-xs lg:text-base bg-secondary-blue">
               Search Home +
             </button>
           </div>
-        </div>
+        </div> 
 
         <div className="flex justify-center mt-8">
           <Button
-            classname="p-3 border-1 border-white rounded-lg text-white"
+            classname="p-3 border-2 border-white rounded-lg text-white"
             text={"Experience The Journey"}
             icons={"play-icon.svg"}
             onClick={handleClick} // Make sure handleClick is defined
           />
         </div>
-      </div> */}
+
+      </div>
     </div>
   );
 };
