@@ -1,5 +1,4 @@
-"use client";
-
+'use client';
 import React from "react";
 import { Container } from "../Shared/Container";
 import Button from "../Shared/Button";
@@ -22,7 +21,7 @@ const Footer = () => {
             onClick={handleScrollTop}
           />
         </div>
-        <div class="flex items-center h-110 bg-secondary-blue text-white py-2 px-[30px] 2xl:px-[125px]">
+        <div className="flex items-center h-110 bg-secondary-blue text-white py-2 px-[30px] 2xl:px-[125px]">
           <h6 className="flex-1 text-center font-[500] text-xl 2xl:text-[32px]"><span className="text-primary-blue">Hi!</span> Let’s Download Our App</h6>
           <div className="flex-1 flex justify-center items-center gap-1 max-h-[70px]">
             <Button
