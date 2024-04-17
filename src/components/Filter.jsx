@@ -90,15 +90,16 @@ const Filter = () => {
 
     <div className="flex flex-col justify-center mx-auto px-4 py-5 sm:px-6 lg:px-8 max-w-screen-md font-light">
       {/* Heading */}
-      <div className="flex-1 bg-black w-full relative">
-        <div className="absolute left-0 md:left-[1rem] md:-top-[14px]">
-          <Circle />
-        </div>
-        <div className="text-center text-white text-sm md:text-4xl lg:text-7xl leading-none font-extrabold tracking-wider">
+      <div className="flex-1 w-full relative mt-10 lg:mt-20">
+        
+        <div className="max-w-[900px] relative text-center text-white text-2xl md:text-4xl lg:text-7xl leading-none font-extrabold tracking-wider">
+        <div className="absolute max-w-[225px] p-3 left-20 lg:-left-14 lg:-top-20 -top-5">
+          <img src="/circle.svg" alt="dotted-circle" className="object-contain w-1/3 lg:w-full lg:max-w-[225px]"/>
+          </div>
           <h1>Find your dream</h1>
           <h1 className="ml-9">House here</h1>
         </div>
-        <div className="mt-2 text-center font-openSans text-white text-base sm:text-lg font-extralight tracking-wide leading-loose">
+        <div className="mt-2 text-center font-openSans text-white text-[8px] md:text-lg font-extralight tracking-wide leading-loose">
           <p>
             Morbi eget pharetra felis. Nam pulvinar tincidunt purus eget
             convallis. Nulla eget arcu vitae velit suscipit mattis. Quisque at
@@ -108,7 +109,7 @@ const Filter = () => {
       </div>
 
       {/* Filter */}
-      <div className="flex-1 bg-black w-full">
+      {/* <div className="flex-1 bg-black w-full">
         <div className="flex flex-col justify-center p-5 mx-auto max-h-[335px] max-w-[723px] bg-primary-blue bg-opacity-80 rounded-[55px] border-4 border-white font-poppins tracking-wide">
           <div className="flex justify-center p-3 gap-4 md:gap-8 mb-4">
             <button className="btn text-white bg-secondary-blue">RENT</button>
@@ -164,7 +165,7 @@ const Filter = () => {
             onClick={handleClick} // Make sure handleClick is defined
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -3,7 +3,8 @@ import React from 'react'
 const Circle = ({ color = "white", width = "100%", height = "100%" }) => {
   return (
     <>
-        <div className="w-[3rem] md:w-[8rem] lg:w-[10rem] max-w-[225px]">
+        {/* <div className="w-[4rem] md:w-[8rem] lg:w-[10rem] max-w-[225px] absolute -top-3 left-[14px] md:left-[1rem] md:-top-[14px] bg-black"> */}
+        <div className="absolute bg-black w-16 max-w-[225px] left-[3.2rem]">
           <svg
             width={width}
             height={height}

@@ -103,7 +103,7 @@ const Carousel = ({ images }) => {
           ))}
         </div>
 
-        <div className="absolute top-0 right-0 rounded-[40px] bg-gradient-to-t from-[#0F0F0F] to-transparent"></div>
+        <div className="absolute w-full h-full top-0 right-0 rounded-[40px] bg-gradient-to-t from-[#0F0F0F] to-transparent"></div>
         <div className="absolute px-2 flex justify-center w-full top-0 h-full rounded-[40px] bg-gradient-to-t from-[#22577b81] to-transparent">
           <Filter />
         </div>
