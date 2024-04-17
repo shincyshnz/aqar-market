@@ -16,3 +16,11 @@ export const  NAV_LINKS = [
       link: "contact",
     },
   ];
+
+export const IMAGES = [
+  '/banner-image-1.jpeg',
+  '/banner-image-1.jpeg',
+  '/banner-image-1.jpeg',
+  '/banner-image-1.jpeg',
+  '/banner-image-1.jpeg',
+];

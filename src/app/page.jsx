@@ -1,17 +1,12 @@
 
 import Carousel from "@/components/Carousel";
-
-const images = [
-  '/banner-image-1.jpeg',
-  '/banner-image-1.jpeg',
-  '/banner-image-1.jpeg',
-];
+import { IMAGES } from "@/components/Constants/constants";
 
 export default async function Page() {
   return (
     <>
-      <main className="min-h-screen">
-        <Carousel images={images} />
+      <main className="w-full max-w-[1920px] min-h-screen">
+        <Carousel images={IMAGES} />
       </main>
     </>
   );

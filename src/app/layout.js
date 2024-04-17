@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         <Navigation />
         {children}
         {/* Footer */}
-        <Footer />
+        {/* <Footer /> */}
         </body>
     </html>
   );

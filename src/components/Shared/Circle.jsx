@@ -1,11 +1,12 @@
 import React from 'react'
 
-const Circle = ({color = "white"}) => {
+const Circle = ({ color = "white", width = "100%", height = "100%" }) => {
   return (
     <>
-    <svg
-            width="225"
-            height="225"
+        <div className="w-[3rem] md:w-[8rem] lg:w-[10rem] max-w-[225px]">
+          <svg
+            width={width}
+            height={height}
             viewBox="0 0 225 225"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -21,6 +22,7 @@ const Circle = ({color = "white"}) => {
               strokeDasharray="6 4"
             />
           </svg>
+        </div>
     </>
   )
 }

@@ -11,7 +11,7 @@ const Navigation = () => {
 
   return (
     <div className="sticky z-50 font-poppins flex justify-between items-center gap-1 h-[95px] md:h-[110px] md:mx-[20px] py-[5px] lg:mx-28 xl:mx-56 lg:py-[15px]">
-      <div className="logo">
+      <div className="logo ml-2 md:ml-0">
         <h1 className="md:w-[120px]">
           <a
             className="text-secondary-blue font-[800] text-lg md:text-[32px] md:leading-9"
