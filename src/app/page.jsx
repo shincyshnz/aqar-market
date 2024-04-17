@@ -1,6 +1,6 @@
 
+import { IMAGES } from "@/Constants/constants";
 import Carousel from "@/components/Carousel";
-import { IMAGES } from "@/components/Constants/constants";
 
 export default async function Page() {
   return (

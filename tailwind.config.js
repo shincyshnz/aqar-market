@@ -9,7 +9,7 @@ export const theme = {
   extend: {
     fontFamily: {
       poppins: ["var(--font-poppins)"],
-      openSans : ["var(--font-opensans)"]
+      openSans: ["var(--font-opensans)"]
     },
     colors: {
       'primary-blue': '#A5D0EF',
@@ -18,9 +18,12 @@ export const theme = {
       'gray-one': '#999999',
       'gray-two': '#949499',
       'gray-three': '#A6A6A6',
-      'gray-four':'#63747C',
+      'gray-four': '#63747C',
       'black-one': '#0F0F0F',
       'bg-gray': '#E7E7E7',
+      'rgba-15-15-15-0': 'rgba(15, 15, 15, 0)',
+      'rgba-34-87-123-1': 'rgba(34, 87, 123, 1)',
+      'rgba-166-166-166-1': 'rgba(166, 166, 166, 1)'
     },
     backgroundImage: {
       "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

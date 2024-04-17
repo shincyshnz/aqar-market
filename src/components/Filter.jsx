@@ -1,6 +1,5 @@
 "use client"
 import React from "react";
-import Circle from "./Shared/Circle";
 import Button from "./Shared/Button";
 
 const Filter = () => {

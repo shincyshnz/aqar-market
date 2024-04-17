@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Container } from "./Shared/Container";
 import { FaBars, FaSignInAlt, FaTimes } from "react-icons/fa";
-import { NAV_LINKS } from "./Constants/constants";
+import { NAV_LINKS } from "@/Constants/constants";
 
 const Navigation = () => {
   const [nav, setNav] = useState(false);
