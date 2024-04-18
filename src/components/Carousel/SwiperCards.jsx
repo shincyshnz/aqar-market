@@ -29,16 +29,16 @@ const SwiperCards = ({ data }) => {
   };
 
   return (
-    <div className="w-full h-full md:max-w-[1140px] flex flex-col md:flex-row justify-center gap-1 py-10 md:py-[80px] 2xl:py-[111px]">
-      <div className="w-full md:w-1/3 h-1/2 px-6">
+    <div className="w-full h-full md:max-w-[1140px] flex flex-col md:flex-row justify-center gap-1 py-8 md:py-[60px] 2xl:py-[111px] px-2 md:px-[125px]">
+      <div className="w-full md:w-[250px] h-1/2 px-6">
         <Title
           heading={"for rent"}
-          classname=''
-          classSubHeading='font-roboto text-ternary-blue font-[300] text-[11px] 2xl:text-[13px]'
-          classHeading='font-roboto text-gray-five font-[900] text-[20px] 2xl:text-[24px]'
+          classname='uppercase'
+          classSubHeading='font-roboto text-ternary-blue font-[300] text-[16px] 2xl:text-[18px] leading-[8px]'
+          classHeading='font-roboto text-gray-five font-[900] text-[30px] 2xl:text-[32px]'
           subHeading={"property"}
         />
-        <p className="font-roboto text-gray-two text-xs 2xl:text-sm font-[300]">Our Latest listed properties
+        <p className="font-roboto text-gray-two text-xs 2xl:text-sm font-[300] uppercase">Our Latest listed properties
           and check out the facilities on
           them.
         </p>
@@ -53,10 +53,10 @@ const SwiperCards = ({ data }) => {
       </div>
 
       <div className="w-full md:w-2/3 h-full md:mx-auto">
-        <div className="flex overflow-hidden gap-2 max-w-[1140px]">
+        <div className="flex overflow-hidden gap-2">
           <Swiper
             slidesPerView={3}
-            spaceBetween={5}
+            spaceBetween={15}
             navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
             loop={true}
             onSwiper={setSwiper}
@@ -64,12 +64,12 @@ const SwiperCards = ({ data }) => {
             {data.map((property, index) => (
               <SwiperSlide key={index}>
                 <Link href="#">
-                  <div className="h-full rounded-[20px] border-2 border-gray-100 font-roboto font-[700] text-[#3C3C44] overflow-hidden">
-                    <img className="w-full h-[158px] max-w-[250px]" src={property.img} alt={`slide-${index}`} />
-                    <div className="px-6 py-4">
-                      <div className="text-sm 2xl:text-base mb-3">{property.title}</div>
+                  <div className="w-full h-full rounded-[20px] border-2 border-gray-100 font-roboto font-[700] text-[#3C3C44] overflow-hidden">
+                    <img className="w-full max-w-[250px]" src={property.img} alt={`slide-${index}`} />
+                    <div className="px-2 pt-4">
+                      <div className="text-sm 2xl:text-base">{property.title}</div>
                     </div>
-                    <div className="px-6 pt-2 pb-4">
+                    <div className="px-2 pt-6 pb-3">
                       <div className="flex justify-center items-center gap-2">
                         <img src="/icons/area-icon.svg" className='w-[12px] h-[12px]' alt="area" />
                         <span className="inline-block text-xs">{`${property.area} sq`}

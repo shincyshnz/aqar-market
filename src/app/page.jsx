@@ -7,8 +7,6 @@ import Image from "next/image";
 
 export default async function Page() {
 
-
-
   return (
     <>
       <main className="w-full max-w-[1920px] min-h-screen">
@@ -20,12 +18,12 @@ export default async function Page() {
             <Title
               subHeading={"trending"}
               heading={"featured properties"}
-              classname={TITLE_CSS.classname}
+              classname={`${TITLE_CSS.classname} uppercase`}
               classSubHeading={TITLE_CSS.classSubHeading}
-              classHeading={`${TITLE_CSS.classHeading} uppercase font-[900]`}
+              classHeading={`${TITLE_CSS.classHeading} font-[900]`}
             />
             <SwiperCards data={PROPERTY_CATEGORIES} />
-            <hr />
+            <hr/>
             <SwiperCards data={PROPERTY_CATEGORIES} />
           </Container >
         </section>
@@ -45,17 +43,17 @@ export default async function Page() {
                 heading={"explore our cities"}
                 subHeading={"find propeerties"}
                 classname={TITLE_CSS.classname}
-                classSubHeading={TITLE_CSS.classSubHeading}
+                classSubHeading={`${TITLE_CSS.classSubHeading} uppercase`}
                 classHeading={`${TITLE_CSS.classHeading} capitalize font-[600]`}
               />
 
               <div className="flex flex-wrap flex-grow items-center justify-center gap-4 2xl:gap-[30px] px-2 2xl:px-[15px] mt-5 lg:mt-10">
-                <div className="flex flex-col items-center gap-2 px-2">
+                <div className="flex flex-col items-center gap-2 px-2  max-w-[370px] max-h-[512px]">
                   <Image
                     src='/explore-properties-1.png'
-                    width={350}
-                    height={350}
-                    className="rounded-[20px] object-cover aspect-square"
+                    width={348}
+                    height={398}
+                    className="rounded-img aspect-square"
                   />
 
                   <div className="w-full flex justify-between items-center pt-4 px-8">
@@ -77,7 +75,7 @@ export default async function Page() {
                     src='/explore-properties-1.png'
                     width={350}
                     height={350}
-                    className="rounded-[20px] object-cover aspect-square"
+                    className="rounded-img aspect-square"
                   />
 
                   <div className="w-full flex justify-between items-center pt-4 px-8">
@@ -99,7 +97,7 @@ export default async function Page() {
                     src='/explore-properties-1.png'
                     width={350}
                     height={350}
-                    className="rounded-[20px] object-cover aspect-square"
+                    className="rounded-img aspect-square"
                   />
 
                   <div className="w-full flex justify-between items-center pt-4 px-8">
@@ -123,7 +121,40 @@ export default async function Page() {
         </section>
 
         {/* section -3 */}
-        
+        <section id="about" >
+          <Container className="w-full">
+            <div className="flex flex-wrap">
+              <div className="w-full min-h-[570px] relative left flex-1 bg-red-500">
+                
+                {/* <Image
+                  src='/explore-properties-1.png'
+                  width={350}
+                  height={350}
+                  className="rounded-img aspect-square absolute top-0 left-0"
+                /> */}
+
+                  {/* <!-- Image 1 --> */}
+                  <div className="absolute max-w-[470px] max-h-[315px] right-0 top-[50%]">
+                    <img src="/shape-1.png" className="w-full h-full object-cover" alt="shape-1" />
+                  </div>
+                  {/* <!-- Image 2 --> */}
+                  <div className="absolute max-w-[470px] max-h-[315px] -top-10 -left-10 rounded-xl overflow-hidden">
+                    <img src="about-img-box-top.png" className="w-full h-full object-cover" alt="about-style1-img-2" />
+                  </div>
+                  {/* <!-- Image 3 --> */}
+                  <div className="absolute max-w-[470px] max-h-[315px] top-[40%] right-10 rounded-xl overflow-hidden">
+                    <img src="about-img-box-bottom.png" className="w-full h-full object-cover" alt="image" />
+                  </div>
+                  {/* <!-- Image 4 --> */}
+                  {/* <div className="absolute w-56 h-56 top-0 right-0 rounded-xl overflow-hidden">
+                    <img src="/shape-1.png" className="w-full h-full object-cover" alt="image" />
+                  </div> */}
+
+              </div>
+              <div className="right flex-1"></div>
+            </div>
+          </Container>
+        </section>
 
       </main >
     </>

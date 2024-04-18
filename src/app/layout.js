@@ -20,7 +20,7 @@ const openSans = Open_Sans({
 const roboto = Roboto({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-roboto", 
+  variable: "--font-roboto",
   weight: ["100", "300", "400", "500", "700", "900"],
 });
 
@@ -32,11 +32,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} mx-auto w-full max-w-[1920px] overflow-x-hidden`}>
+      <body className={`${poppins.variable} ${roboto.variable} ${openSans.variable} mx-auto w-full max-w-[1920px] overflow-x-hidden`}>
         <Navigation />
         {children}
         <Footer />
-        </body>
+      </body>
     </html>
   );
 }

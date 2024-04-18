@@ -89,7 +89,7 @@ const Carousel = ({ images }) => {
 
 
 
-    <div className="px-2 lg:mx-[20px] xl:mx-50 min-h-screen">
+    <div className="px-2 lg:mx-[30px] xl:mx-50 min-h-screen">
       <div className="relative overflow-hidden max-w-[1820px] min-h-screen md:h-auto rounded-[40px]">
         <div className="flex justify-center transition duration-300 transform min-h-screen" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
 

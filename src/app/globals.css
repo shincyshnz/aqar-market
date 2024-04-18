@@ -10,9 +10,25 @@
   box-sizing: border-box;
 }
 
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.font-roboto {
+  font-family: var(--font-roboto);
+}
+
+.font-opensans {
+  font-family: var(--font-opensans);
+}
+
 @layer utilities {
-  body{
-    @apply font-poppins;
+  html {
+    scrollbar-width: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
   }
 
   .flex-center {
@@ -31,13 +47,18 @@
     border-radius: 10px;
   }
 
-  .input{
+  .input {
     padding-inline: 10px;
     padding-block: 8px;
     font-size: 16px;
     height: 45px;
     border-radius: 6px;
     border: 1px solid #F6F6F6;
+  }
+
+  .rounded-img {
+    border-radius: 20px;
+    object-fit: cover;
   }
 
 }
