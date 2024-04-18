@@ -23,7 +23,7 @@ export default async function Page() {
               classHeading={`${TITLE_CSS.classHeading} font-[900]`}
             />
             <SwiperCards data={PROPERTY_CATEGORIES} />
-            <hr/>
+            <hr />
             <SwiperCards data={PROPERTY_CATEGORIES} />
           </Container >
         </section>
@@ -49,12 +49,7 @@ export default async function Page() {
 
               <div className="flex flex-wrap flex-grow items-center justify-center gap-4 2xl:gap-[30px] px-2 2xl:px-[15px] mt-5 lg:mt-10">
                 <div className="flex flex-col items-center gap-2 px-2  max-w-[370px] max-h-[512px]">
-                  <Image
-                    src='/explore-properties-1.png'
-                    width={348}
-                    height={398}
-                    className="rounded-img aspect-square"
-                  />
+                  <img src='/explore-properties-1.png' className="rounded-img aspect-square md:w-[250px] 2xl:w-[340px]" />
 
                   <div className="w-full flex justify-between items-center pt-4 px-8">
                     <Title
@@ -71,13 +66,7 @@ export default async function Page() {
                   </div>
                 </div>
                 <div className="flex flex-col items-center gap-2 px-2">
-                  <Image
-                    src='/explore-properties-1.png'
-                    width={350}
-                    height={350}
-                    className="rounded-img aspect-square"
-                  />
-
+                  <img src='/explore-properties-1.png' className="rounded-img aspect-square md:w-[250px] 2xl:w-[340px]" />
                   <div className="w-full flex justify-between items-center pt-4 px-8">
                     <Title
                       heading="Dubai"
@@ -93,12 +82,9 @@ export default async function Page() {
                   </div>
                 </div>
                 <div className="flex flex-col items-center gap-2 px-2">
-                  <Image
-                    src='/explore-properties-1.png'
-                    width={350}
-                    height={350}
-                    className="rounded-img aspect-square"
-                  />
+
+                  <img src='/explore-properties-1.png' className="rounded-img aspect-square md:w-[250px] 2xl:w-[340px]" />
+
 
                   <div className="w-full flex justify-between items-center pt-4 px-8">
                     <Title
@@ -122,10 +108,10 @@ export default async function Page() {
 
         {/* section -3 */}
         <section id="about" >
-          <Container className="w-full">
-            <div className="flex flex-wrap">
-              <div className="w-full min-h-[570px] relative left flex-1 bg-red-500">
-                
+          <Container className="w-full mt-6">
+            <div className="flex flex-wrap flex-col md:flex-row">
+              <div className="relative w-full min-h-[570px] left flex-1 flex justify-end p-10">
+
                 {/* <Image
                   src='/explore-properties-1.png'
                   width={350}
@@ -133,25 +119,31 @@ export default async function Page() {
                   className="rounded-img aspect-square absolute top-0 left-0"
                 /> */}
 
-                  {/* <!-- Image 1 --> */}
-                  <div className="absolute max-w-[470px] max-h-[315px] right-0 top-[50%]">
-                    <img src="/shape-1.png" className="w-full h-full object-cover" alt="shape-1" />
-                  </div>
-                  {/* <!-- Image 2 --> */}
-                  <div className="absolute max-w-[470px] max-h-[315px] -top-10 -left-10 rounded-xl overflow-hidden">
-                    <img src="about-img-box-top.png" className="w-full h-full object-cover" alt="about-style1-img-2" />
-                  </div>
-                  {/* <!-- Image 3 --> */}
-                  <div className="absolute max-w-[470px] max-h-[315px] top-[40%] right-10 rounded-xl overflow-hidden">
-                    <img src="about-img-box-bottom.png" className="w-full h-full object-cover" alt="image" />
-                  </div>
-                  {/* <!-- Image 4 --> */}
-                  {/* <div className="absolute w-56 h-56 top-0 right-0 rounded-xl overflow-hidden">
+                {/* <!-- Image 1 --> */}
+                <div className="absolute max-w-[470px] max-h-[315px] -top-[12%] left-0">
+                  <img src="/shape-1.png" className="w-full h-full object-cover" alt="shape-1" />
+                </div>
+                {/* <!-- Image 1 --> */}
+                <div className="absolute max-w-[470px] max-h-[315px] -right-[15%] top-[50%]">
+                  <img src="/shape-1.png" className="w-full h-full object-cover" alt="shape-1" />
+                </div>
+                {/* <!-- Image 2 --> */}
+                <div className="absolute w-[80%] max-w-[470px] max-h-[315px] -top-[7%] -left-10 rounded-xl overflow-hidden">
+                  <img src="about-img-box-top.png" className="w-full h-full object-cover" alt="about-style1-img-2" />
+                </div>
+                {/* <!-- Image 3 --> */}
+                <div className="absolute w-[80%] max-w-[470px] max-h-[315px] top-[42%] -right-[3%] rounded-xl">
+                  <img src="about-img-box-bottom.png" className="w-full h-full object-cover" alt="image" />
+                </div>
+                {/* <!-- Image 4 --> */}
+                {/* <div className="absolute w-56 h-56 top-0 right-0 rounded-xl overflow-hidden">
                     <img src="/shape-1.png" className="w-full h-full object-cover" alt="image" />
                   </div> */}
 
               </div>
-              <div className="right flex-1"></div>
+              <div className="right flex-1 w-full h-full bg-red-800">
+                jksdhfkshdkf
+              </div>
             </div>
           </Container>
         </section>
