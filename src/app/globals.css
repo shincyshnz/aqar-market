@@ -27,6 +27,10 @@
     scrollbar-width: 0;
   }
 
+  body{
+  font-family: var(--font-poppins);
+  }
+
   ::-webkit-scrollbar {
     width: 0;
   }
@@ -57,7 +61,7 @@
   }
 
   .rounded-img {
-    border-radius: 20px;
+    border-radius: 40px;
     object-fit: cover;
   }
 

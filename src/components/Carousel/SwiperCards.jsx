@@ -29,7 +29,7 @@ const SwiperCards = ({ data }) => {
   };
 
   return (
-    <div className="flex max-w-[1200px] flex-col md:flex-row items-center justify-between py-[4rem]">
+    <div className="xl:w-[1200px] flex flex-col md:flex-row items-center justify-between py-[4rem]">
       <div className="w-full md:w-[250px] h-1/2 px-6">
         <Title
           heading={"for rent"}
@@ -52,14 +52,19 @@ const SwiperCards = ({ data }) => {
         </div>
       </div>
 
-      <div className="w-full md:w-2/3 h-full mx-0 my-4 md:my-0">
+      <div className= "w-full md:w-2/3 h-full mx-0 my-4 md:my-0">
         <div className="flex overflow-hidden gap-2">
           <Swiper
-            slidesPerView={3}
+            slidesPerView={1}
             spaceBetween={15}
             navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
             loop={true}
             onSwiper={setSwiper}
+            breakpoints={{
+              768: {
+                slidesPerView: 3 // Change to 3 slides per view for md and above devices
+              }
+            }}
           >
             {data.map((property, index) => (
               <SwiperSlide key={index}>
