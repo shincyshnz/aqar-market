@@ -61,4 +61,8 @@
     object-fit: cover;
   }
 
+  .grey-stroke rect{
+    stroke: gray;
+  }
+
 }

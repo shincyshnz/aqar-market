@@ -18,7 +18,8 @@ export const Container = ({
     return (
       <Element
         {...rest}
-        className={`px-[30px] lg:px-[125px] w-full m-auto py-16 ${className}`}
+        // className={`px-[30px] lg:px-[125px] w-full m-auto py-16 ${className}`}
+        className={`max-w-[1200px] mx-auto px-[5rem] 2xl:px-[22.5rem] py-7 lg:py-14 ${className}`}
       >
         {children}
       </Element>

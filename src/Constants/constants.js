@@ -19,8 +19,8 @@ export const  NAV_LINKS = [
 
   export const TITLE_CSS = {
     classname: 'justify-center items-center',
-    classSubHeading: 'font-roboto text-ternary-blue font-[300] text-[11px] 2xl:text-[13px]',
-    classHeading: 'font-roboto text-gray-five text-[20px] 2xl:text-[24px]'
+    classSubHeading: 'font-roboto text-ternary-blue font-[300] text-[0.815rem]',
+    classHeading: 'font-roboto text-gray-five text-[1.5rem]'
   }
 
 export const IMAGES = [

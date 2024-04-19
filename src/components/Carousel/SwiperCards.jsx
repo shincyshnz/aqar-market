@@ -29,13 +29,13 @@ const SwiperCards = ({ data }) => {
   };
 
   return (
-    <div className="w-full h-full md:max-w-[1140px] flex flex-col md:flex-row justify-center gap-1 py-8 md:py-[60px] 2xl:py-[111px] px-2 md:px-[125px]">
+    <div className="flex max-w-[1200px] flex-col md:flex-row items-center justify-between py-[4rem]">
       <div className="w-full md:w-[250px] h-1/2 px-6">
         <Title
           heading={"for rent"}
           classname='uppercase'
-          classSubHeading='font-roboto text-ternary-blue font-[300] text-[16px] 2xl:text-[18px] leading-[8px]'
-          classHeading='font-roboto text-gray-five font-[900] text-[30px] 2xl:text-[32px]'
+          classSubHeading='font-roboto text-ternary-blue font-[300] text-base 2xl:text-[1.125rem] leading-[8px]'
+          classHeading='font-roboto text-gray-five font-[900] text-[1.5rem] 2xl:text-[2rem]'
           subHeading={"property"}
         />
         <p className="font-roboto text-gray-two text-xs 2xl:text-sm font-[300] uppercase">Our Latest listed properties
@@ -44,15 +44,15 @@ const SwiperCards = ({ data }) => {
         </p>
         <div className="flex items-center gap-1 mt-4">
           <button className="w-10 max-w-[60px]" onClick={goPrev} >
-            <img src="/icons/left-arrow.svg" alt="previous-arrow" className="object-scale-down rounded-full bg-[#D4DCFF]" />
+            <img src="/icons/left-arrow.svg" alt="previous-arrow" className="object-scale-down rounded-full bg-primary-blue" />
           </button>
           <button className="w-10 max-w-[60px]" onClick={goNext}>
-            <img src="/icons/right-arrow.svg" alt="right-arrow" className="object-scale-down rounded-full bg-[#D4DCFF]" />
+            <img src="/icons/right-arrow.svg" alt="right-arrow" className="object-scale-down rounded-full bg-primary-blue" />
           </button>
         </div>
       </div>
 
-      <div className="w-full md:w-2/3 h-full md:mx-auto">
+      <div className="w-full md:w-2/3 h-full mx-0 my-4 md:my-0">
         <div className="flex overflow-hidden gap-2">
           <Swiper
             slidesPerView={3}
