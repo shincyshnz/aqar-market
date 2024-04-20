@@ -173,11 +173,19 @@ const Footer = () => {
         </div>
 
         {/* <!--Copyright section--> */}
-        <div class="bg-black/5 p-6 text-center">
-          <span>© 2023 Copyright:</span>
-          <a class="font-semibold" href="https://tw-elements.com/"
-          >TW Elements</a
-          >
+        <div className="bg-[#F0F1F6] text-gray-four text-sm min-h-[5.6rem] flex justify-between">
+          <div className="max-w-[1200px] px-6 m-auto flex items-center justify-between w-full">
+          <div class="text-center font-openSans">
+            <span>Copyright © 2022 </span>
+            <a class="font-semibold" href="https://tw-elements.com/"
+            >Proplan.</a> All Rights Reserved
+          </div>
+          <div className="flex gap-2">
+            <a href="#">Pivacy policy</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Suppost</a>
+          </div>
+          </div>
         </div>
       </footer>
     </>
