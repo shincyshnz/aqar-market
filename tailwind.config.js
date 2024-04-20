@@ -26,6 +26,7 @@ export const theme = {
       'gray-four': '#63747C',
       'gray-five' : '#3C3C44',
       'gray-border':'#F6F6F6',
+      'drop-down-gray':'#EAEAEA',
       'black-one': '#0F0F0F',
       'bg-gray': '#E7E7E7',
       'rgba-15-15-15-0': 'rgba(15, 15, 15, 0)',

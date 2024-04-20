@@ -60,10 +60,10 @@ const Footer = () => {
       </div> */}
 
       <footer
-        class="text-center text-surface/75 lg:text-left">
+        className="text-center text-surface/75 lg:text-left">
         {/* Scroll top button */}
         <div
-          class="flex items-center justify-end border-b-2 border-neutral-200 p-6">
+          className="flex items-center justify-end border-b-2 border-neutral-200 p-6">
           <Button
             className={"w-[25px] 2xl:w-[55px]"}
             text=""
@@ -103,8 +103,8 @@ const Footer = () => {
         </div>
 
         {/* main footer container */}
-        <div class="mx-auto px-6 max-w-[1200px] py-20 xl:py-24 text-center md:text-left">
-          <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto px-6 max-w-[1200px] py-20 xl:py-24 text-center md:text-left">
+          <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div className="font-poppins font-semibold text-sm leading-7">
               <p className="font-openSans font-normal text-gray-four">Etiam placerat lacinia nisi eget ultri. Aenean et mollis sapien gravida tem ante Morbi id fermentum.</p>
               <p className="mt-5 uppercase"><span className="text-secondary-blue uppercase mr-2">8am - 6pm:</span> Monday - Friday</p>
@@ -113,55 +113,55 @@ const Footer = () => {
             {/* <!-- Programs section --> */}
             <div className="font-openSans text-gray-four text-sm">
               <h6
-                class="text-black font-poppins mb-5 flex justify-center font-semibold uppercase md:justify-start">
+                className="text-black font-poppins mb-5 flex justify-center font-semibold uppercase md:justify-start">
                 Programs
               </h6>
-              <p class="mb-5">
+              <p className="mb-5">
                 <a href="#!">+ Buy A Property</a>
               </p>
-              <p class="mb-5">
+              <p className="mb-5">
                 <a href="#!">+ Сalculate your property</a>
               </p>
-              <p class="mb-5">
+              <p className="mb-5">
                 <a href="#!">+ Rent a property</a>
               </p>
-              <p class="mb-5">
+              <p className="mb-5">
                 <a href="#!">+ Our Terms and Condition</a>
               </p>
             </div>
             {/* <!-- Support section --> */}
             <div className="font-openSans text-gray-four text-sm">
               <h6
-                class="text-black font-poppins mb-5 flex justify-center font-semibold uppercase md:justify-start">
+                className="text-black font-poppins mb-5 flex justify-center font-semibold uppercase md:justify-start">
                 Support
               </h6>
-              <p class="mb-5">
+              <p className="mb-5">
                 <a href="#!">+ About us</a>
               </p>
-              <p class="mb-5">
+              <p className="mb-5">
                 <a href="#!">+ Documentation</a>
               </p>
-              <p class="mb-5">
+              <p className="mb-5">
                 <a href="#!">+ Forums</a>
               </p>
-              <p class="mb-5">
+              <p className="mb-5">
                 <a href="#!">+ Become an Agent</a>
               </p>
             </div>
             {/* <!-- Contact section --> */}
             <div className="font-openSans text-gray-four text-sm">
               <h6
-                class="mb-5 flex justify-center font-semibold uppercase md:justify-start">
+                className="mb-5 flex justify-center font-semibold uppercase md:justify-start">
                 Contact
               </h6>
               <p className="mb-5 uppercase text-gray-300 font-semibold"><span className="text-secondary-blue uppercase mr-2">North west,</span> England</p>
-              <p class="mb-5">
+              <p className="mb-5">
                 <span className="text-black">Email : </span><a href="#">prolan@gmail.com</a>
               </p>
-              <p class="mb-5">
+              <p className="mb-5">
                 <span className="text-black">Phone : </span>+66 555 999 222 00
               </p>
-              <div class="mb-5 flex gap-4 text-black font-semibold">
+              <div className="mb-5 flex gap-4 text-black font-semibold">
                 <span>Follow us:</span>
                 <img src="/icons/facebook-icon.svg" alt="facebook" />
                 <img src="/icons/twitter-icon.svg" alt="facebook" />
@@ -175,9 +175,9 @@ const Footer = () => {
         {/* <!--Copyright section--> */}
         <div className="bg-[#F0F1F6] text-gray-four text-sm min-h-[5.6rem] flex justify-between">
           <div className="max-w-[1200px] px-6 m-auto flex items-center justify-between w-full">
-          <div class="text-center font-openSans">
+          <div className="text-center font-openSans">
             <span>Copyright © 2022 </span>
-            <a class="font-semibold" href="https://tw-elements.com/"
+            <a className="font-semibold" href="https://tw-elements.com/"
             >Proplan.</a> All Rights Reserved
           </div>
           <div className="flex gap-2">
