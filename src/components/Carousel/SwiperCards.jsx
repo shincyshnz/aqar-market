@@ -70,11 +70,11 @@ const SwiperCards = ({ data }) => {
               <SwiperSlide key={index}>
                 <Link href="#">
                   <div className="w-full h-full rounded-[20px] border-2 border-gray-100 font-roboto font-[700] text-[#3C3C44] overflow-hidden">
-                    <img className="w-full max-w-[250px]" src={property.img} alt={`slide-${index}`} />
-                    <div className="px-2 pt-4">
+                    <img className="w-full 2xl:max-w-[250px]" src={property.img} alt={`slide-${index}`} />
+                    <div className="px-2 pt-4 flex flex-col items-center">
                       <div className="text-sm 2xl:text-base">{property.title}</div>
-                    </div>
-                    <div className="px-2 pt-6 pb-3">
+                    
+                      <div className="px-2 pt-6 pb-3">
                       <div className="flex justify-center items-center gap-2">
                         <img src="/icons/area-icon.svg" className='w-[12px] h-[12px]' alt="area" />
                         <span className="inline-block text-xs">{`${property.area} sq`}
@@ -92,8 +92,10 @@ const SwiperCards = ({ data }) => {
                         <span className="inline-block text-xs">{`${property.baths}`}
                         </span>
                       </div>
-
                     </div>
+                    
+                    </div>
+                    
                   </div>
                 </Link>
 

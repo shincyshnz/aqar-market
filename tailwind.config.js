@@ -11,11 +11,15 @@ export const theme = {
       poppins: ["var(--font-poppins)"],
       openSans: ["var(--font-opensans)"]
     },
+    fontSize: {
+      clamp: "clamp(1rem, 5vw, 3rem)",
+    },
     colors: {
       'primary-blue': '#A5D0EF',
       'secondary-blue': '#22577B',
       'ternary-blue': '#4361EE',
       'fourth-blue' : '#D4DCFF',
+      'section-bg-blue' : '#F2FAFF',
       'gray-one': '#999999',
       'gray-two': '#949499',
       'gray-three': '#A6A6A6',

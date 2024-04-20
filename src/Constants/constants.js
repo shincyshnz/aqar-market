@@ -18,9 +18,9 @@ export const  NAV_LINKS = [
   ];
 
   export const TITLE_CSS = {
-    classname: 'justify-center items-center',
-    classSubHeading: 'font-roboto text-ternary-blue font-[300] text-[0.815rem]',
-    classHeading: 'font-roboto text-gray-five text-[1.5rem]'
+    classname: 'justify-center items-center font-roboto text-center',
+    classSubHeading: 'text-ternary-blue text-xs xl:text-[0.815rem]',
+    classHeading: 'text-gray-five text-[1.5rem] tracking-wider'
   }
 
 export const IMAGES = [
@@ -62,4 +62,28 @@ export const PROPERTY_CATEGORIES = [
     beds:5,
     baths:3
   }
+];
+
+export const SERVICES_ICONS = [
+  {
+    title: "Trusted By Thousands",
+    text:"Donec sit amet urna libero. Quisque efficitur nulla et odio hendrerit gravida. Sed mattis leo mollis.",
+    img : '/icons/services-4.svg'
+  },
+  {
+    title: "Evaluate Property",
+    text:"Donec sit amet urna libero. Quisque efficitur nulla et odio hendrerit gravida. Sed mattis leo mollis.",
+    img : '/icons/services-3.svg'
+  },
+  {
+    title: "Wide Range Of Properties",
+    text:"Donec sit amet urna libero. Quisque efficitur nulla et odio hendrerit gravida. Sed mattis leo mollis.",
+    img : '/icons/services-2.svg'
+  },
+  {
+    title: "Find a Good Side",
+    text:"Donec sit amet urna libero. Quisque efficitur nulla et odio hendrerit gravida. Sed mattis leo mollis.",
+    img : '/icons/services-1.svg'
+  },
+  
 ];
