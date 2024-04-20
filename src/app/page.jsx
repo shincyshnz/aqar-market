@@ -44,7 +44,7 @@ export default async function Page() {
               subHeading={"find properties"}
               classname={TITLE_CSS.classname}
               classSubHeading={`${TITLE_CSS.classSubHeading} text-ternary-blue font-[300] uppercase`}
-              classHeading={`${TITLE_CSS.classHeading} capitalize font-[600]`}
+              classHeading={`${TITLE_CSS.classHeading} capitalize font-semibold`}
             />
             <div className="mx-auto mt-16 max-w-[1200px]">
               <div className="flex flex-wrap md:flex-no-wrap items-center justify-center gap-5 2xl:gap-[3.25rem]">
@@ -55,9 +55,9 @@ export default async function Page() {
                       <Title
                         heading="Dubai"
                         subHeading="23 properties"
-                        classname='font-[600] text-left'
+                        classname='font-semibold text-left'
                         classSubHeading='text-gray-four font-[400] text-sm'
-                        classHeading='font-[600] text-base mt-3'
+                        classHeading='font-semibold text-base mt-3'
                       />
 
                       <button className="w-10 max-w-[60px]">
@@ -130,31 +130,31 @@ export default async function Page() {
               heading={"why choose our property"}
               classname={`${TITLE_CSS.classname} uppercase`}
               classSubHeading={`${TITLE_CSS.classSubHeading} font-[500]`}
-              classHeading={`${TITLE_CSS.classHeading} font-[600] capitalize`}
+              classHeading={`${TITLE_CSS.classHeading} font-semibold capitalize`}
             />
 
             <div className="grid grid-cols-2 md:grid-cols-4 justify-center lg:justify-start">
               {SERVICES_ICONS.map((data, index) => (
                 <div key={index} className="flex-1 pt-12 px-2 md:px-5 2xl:px-11 flex flex-col items-center text-center">
                   <img className="flex-1" src={data.img} alt={`services-${index}`} />
-                  <h3 className="flex-1 pt-[2.5rem] font-poppins font-[600] text-[1.125rem] capitalize">{data.title}</h3>
+                  <h3 className="flex-1 pt-[2.5rem] font-poppins font-semibold text-[1.125rem] capitalize">{data.title}</h3>
                   <p className="flex-2 mb-6 leading-8 font-openSans pt-[0.75rem] font-[400] text-sm text-gray-four">{data.text}</p>
                 </div>
               ))}
             </div>
 
-            <div className="shadow-lg absolute left-0 lg:left-[15px] flex mx-auto rounded-[20px] px-3 md:px-5 lg:px-[3.125rem] py-5 md:py-10 w-[100%] max-w-[1170px] bg-white ">
-              <div className="flex flex-wrap md:flex-no-wrap lg:gap-2 items-center font-[400]">
+            <div className="shadow-lg absolute left-0 xl:left-[15px] flex lg:mx-auto mx-2 rounded-[20px] px-3 md:px-5 lg:px-[3.125rem] py-5 lg:py-10 max-w-[1170px] bg-white ">
+              <div className="flex flex-wrap lg:flex-no-wrap items-center justify-center font-[400]">
                 <h1 className="lg:w-1/2 font-poppins text-xl md:text-3xl lg:text-7xl text-secondary-blue">+1.2K</h1>
-                <p className="lg:w-1/2 font-openSans text-[8px] md:text-xs lg:text-sm text-gray-four px-3">Total Number Of Our Prolan Properties.</p>
+                <p className="lg:w-1/2 font-openSans text-[8px] md:text-xs lg:text-sm text-gray-four px-6 text-center lg:text-left">Total Number Of Our Prolan Properties.</p>
               </div>
-              <div className="flex flex-wrap md:flex-no-wrap lg:gap-2 items-center font-[400]">
-                <h1 className="lg:w-1/2 font-poppins text-xl md:text-3xl lg:text-7xl text-secondary-blue">+1.2K</h1>
-                <p className="lg:w-1/2 font-openSans text-[8px] md:text-xs lg:text-sm text-gray-four px-3">Total Number Of Our Prolan Properties.</p>
+              <div className="flex flex-wrap lg:flex-no-wrap items-center justify-center font-[400]">
+                <h1 className="lg:w-1/2 font-poppins text-xl md:text-3xl lg:text-7xl text-secondary-blue">+7.3K</h1>
+                <p className="lg:w-1/2 font-openSans text-[8px] md:text-xs lg:text-sm text-gray-four px-6 text-center lg:text-left">Total Number Of Our Prolan Properties.</p>
               </div>
-              <div className="flex flex-wrap md:flex-no-wrap lg:gap-2 items-center font-[400]">
-                <h1 className="lg:w-1/2 font-poppins text-xl md:text-3xl lg:text-7xl text-secondary-blue">+1.2K</h1>
-                <p className="lg:w-1/2 font-openSans text-[8px] md:text-xs lg:text-sm text-gray-four px-3">Total Number Of Our Prolan Properties.</p>
+              <div className="flex flex-wrap lg:flex-no-wrap items-center justify-center font-[400]">
+                <h1 className="lg:w-1/2 font-poppins text-xl md:text-3xl lg:text-7xl text-secondary-blue">+2.4K</h1>
+                <p className="lg:w-1/2 font-openSans text-[8px] md:text-xs lg:text-sm text-gray-four px-6 text-center lg:text-left">Total Number Of Our Prolan Properties.</p>
               </div>
             </div>
           </Container>

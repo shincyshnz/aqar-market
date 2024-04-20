@@ -29,7 +29,7 @@ const SwiperCards = ({ data }) => {
   };
 
   return (
-    <div className="xl:w-[1200px] flex flex-col md:flex-row items-center justify-between py-[4rem]">
+    <div className="xl:w-[1200px] flex flex-col md:flex-row items-center justify-center py-[4rem]">
       <div className="w-full md:w-[250px] h-1/2 px-6">
         <Title
           heading={"for rent"}
@@ -52,10 +52,10 @@ const SwiperCards = ({ data }) => {
         </div>
       </div>
 
-      <div className= "w-full md:w-2/3 h-full mx-0 my-4 md:my-0">
+      <div className= "w-full md:w-2/3 h-full mx-0 my-4 md:my-0 px-5 md:px-0">
         <div className="flex overflow-hidden gap-2">
           <Swiper
-            slidesPerView={1}
+            slidesPerView={2}
             spaceBetween={15}
             navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
             loop={true}
@@ -75,7 +75,7 @@ const SwiperCards = ({ data }) => {
                       <div className="text-sm 2xl:text-base">{property.title}</div>
                     
                       <div className="px-2 pt-6 pb-3">
-                      <div className="flex justify-center items-center gap-2">
+                      <div className="flex flex-wrap md:flex-no-wrap justify-center items-center gap-2">
                         <img src="/icons/area-icon.svg" className='w-[12px] h-[12px]' alt="area" />
                         <span className="inline-block text-xs">{`${property.area} sq`}
                         </span>
