@@ -42,7 +42,17 @@
 }
 
 #range-slider-blue .range-slider__range[data-active] {
-  height: 16px;
+  height: 20px;
+}
+
+.remove-arrow::-webkit-inner-spin-button,
+.remove-arrow::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.remove-arrow {
+  -moz-appearance: textfield;
 }
 
 @layer utilities {
@@ -92,4 +102,7 @@
     stroke: gray;
   }
 
+  .mb-21 {
+    margin-bottom: 1.3125rem;
+  }
 }
