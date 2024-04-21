@@ -22,13 +22,36 @@
   font-family: var(--font-opensans);
 }
 
+/* slider css */
+#range-slider-blue {
+  background: #e8e8e8;
+}
+
+#range-slider-blue .range-slider__range {
+  background: #22577B;
+  transition: height 0.3s;
+}
+
+#range-slider-blue .range-slider__thumb {
+  background: #22577B;
+  transition: transform 0.3s;
+}
+
+#range-slider-blue .range-slider__thumb[data-active] {
+  transform: translate(-50%, -50%) scale(1.25);
+}
+
+#range-slider-blue .range-slider__range[data-active] {
+  height: 16px;
+}
+
 @layer utilities {
   html {
     scrollbar-width: 0;
   }
 
-  body{
-  font-family: var(--font-poppins);
+  body {
+    font-family: var(--font-poppins);
   }
 
   ::-webkit-scrollbar {
@@ -65,7 +88,7 @@
     object-fit: cover;
   }
 
-  .grey-stroke rect{
+  .grey-stroke rect {
     stroke: gray;
   }
 
