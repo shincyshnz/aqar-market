@@ -11,6 +11,7 @@ const Dropdown = ({ ...props }) => {
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
+    props.updateFilterData({[props.name] : option});
     setIsOpen(false);
   };
 
@@ -55,7 +56,7 @@ const Dropdown = ({ ...props }) => {
       )}
 
       {selectedOption && (
-        <p className="mt-2 text-sm text-gray-500">Selected option: {selectedOption}</p>
+        <p className="mt-2 text-sm text-gray-500">{selectedOption}</p>
       )}
     </Fragment>
   );

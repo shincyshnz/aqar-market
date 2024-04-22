@@ -13,6 +13,7 @@ export default function Page() {
   const [selectedStyles, setSelectedtyles] = useState(
     STYLE_FILTER.map((item) => ({ ...item, isChecked: false }))
   );
+  const [selectedOption, setSelectedOption] = useState("");
 
   // Initial filter data object
   const INITIAL_FILTER_DATA = {
@@ -54,6 +55,17 @@ export default function Page() {
     });
   };
 
+  const handleSize =(e)=>{
+    const {value, name} = e.target;
+
+    if(name === "minSize"){
+      updateFilterData({minSqft : value});
+    }
+    if(name === "maxSize"){
+      updateFilterData({maxSqft : value});
+    }
+  }
+
   console.log(filterData);
 
   return (
@@ -67,9 +79,11 @@ export default function Page() {
         <div className="flex flex-col gap-3 mb-21">
           <p className="opacity-[50%]">Location</p>
           <Dropdown
-            buttonText={"Location"}
+            buttonText="Location"
+            name="location"
             icon={<img src="/icons/location.svg" alt="location icon" />}
-            options = {["Dubai", "Abudhabi", "Sharjah", "Rak"]}
+            options={["Dubai", "Abudhabi", "Sharjah", "Rak"]}
+            updateFilterData={updateFilterData}
           />
         </div>
 
@@ -77,15 +91,17 @@ export default function Page() {
         <div className="flex flex-col gap-3 mb-21">
           <p className="opacity-[50%]">Property Type</p>
           <Dropdown
-            buttonText={"All"}
-            options = {["all", "town house", "villa"]}
+            buttonText="All"
+            name="propertyType"
+            options={["all", "town house", "villa"]}
+            updateFilterData={updateFilterData}
           />
         </div>
 
         {/* Price Range filter */}
         <div className="flex flex-col gap-3 mb-21">
           <p className="opacity-[50%]">Price Range</p>
-          <PriceRangeSlider />
+          <PriceRangeSlider updateFilterData={updateFilterData} />
         </div>
 
         <hr className="mb-21" />
@@ -98,20 +114,24 @@ export default function Page() {
             <div className="w-1/2 flex justify-between items-center border-[1px] border-drop-down-gray rounded-lg py-2 focus:ring-gray-300">
               <Input
                 type="number"
+                name="minSize"
                 className="w-full px-4 py-2 focus:outline-none remove-arrow"
                 aria-controls="none"
                 placeholder="Min"
                 id="sqftInputMin"
+                onChange={handleSize}
               />
               <label className="opacity-[50%] px-4">sqft</label>
             </div>
             <div className="w-1/2 text-black flex justify-between items-center border-[1px] border-drop-down-gray rounded-lg py-2 focus:ring-gray-300">
               <Input
                 type="number"
+                name="maxSize"
                 className="w-full px-4 py-2 focus:outline-none remove-arrow"
                 aria-controls="none"
                 placeholder="Max"
                 id="sqftInputMax"
+                onChange={handleSize}
               />
               <label className="opacity-[50%] px-4">sqft</label>
             </div>
@@ -217,9 +237,9 @@ export default function Page() {
         <hr className="mb-21" />
 
         {/* Filter Button */}
-        <Button 
-          classname="bg-secondary-blue rounded-[4px] w-full h-[50px] font-semibold text-white" 
-          text="Filter" 
+        <Button
+          classname="bg-secondary-blue rounded-[4px] w-full h-[50px] font-semibold text-white"
+          text="Filter"
         />
       </div>
 
