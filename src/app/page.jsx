@@ -83,13 +83,13 @@ export default async function Page() {
 
                   <div className="absolute w-[1rem] xl:w-[13.7rem] left-[4.9rem] top-[8rem] md:top-[15rem] xl:top-[32rem]">
                     <svg className="object-contain w-32 h-32 xl:w-[220px] xl:h-[220px]" fill="none" viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="1" y="1" width="223" height="223" rx="111.5" stroke="#E7E7E7" stroke-width="2" stroke-dasharray="6 4" />
+                      <rect x="1" y="1" width="223" height="223" rx="111.5" stroke="#E7E7E7" strokeWidth="2" strokeDasharray="6 4" />
                     </svg>
                   </div>
 
-                  <div class="z-40 relative w-40 h-40 xl:w-60 xl:h-60 left-[50%] md:left-[14rem] xl:left-[26rem] bottom-36 md:bottom-24 xl:bottom-48 bg-blue-300 rounded-full flex justify-center items-center">
+                  <div className="z-40 relative w-40 h-40 xl:w-60 xl:h-60 left-[50%] md:left-[14rem] xl:left-[26rem] bottom-36 md:bottom-24 xl:bottom-48 bg-blue-300 rounded-full flex justify-center items-center">
                     <svg width="220" height="220" fill="none" viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="1" y="1" width="223" height="223" rx="111.5" stroke="#E7E7E7" stroke-width="2" stroke-dasharray="6 4" />
+                      <rect x="1" y="1" width="223" height="223" rx="111.5" stroke="#E7E7E7" strokeWidth="2" strokeDasharray="6 4" />
                     </svg>
                     <div className="absolute flex flex-col justify-center items-center text-white font-[300] text-[3rem] xl:text-[3.75rem] leading-none">
                       <p>80+</p>
