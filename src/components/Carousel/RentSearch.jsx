@@ -26,7 +26,7 @@ const RentSearch = () => {
         placeholder="Inter Location"
         value={filterData.location}
         onChange={handleLocationInputChange}
-        inputClass="w-full focus:outline-0 font-semibold font-base placeholder:text-black"
+        inputClass="py-4 mr-1 border-gray-border w-full focus:outline-0 font-semibold font-base placeholder:text-black"
       />
 
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 mt-4 mb-7 text-sm font-openSans">

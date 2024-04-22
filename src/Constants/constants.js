@@ -87,3 +87,57 @@ export const SERVICES_ICONS = [
   },
   
 ];
+
+export const FEATURES_FILTER = [
+  {
+    id : 1,
+    featureName : 'Ac & Heating',
+  },
+  {
+    id : 2,
+    featureName : 'Clubhouse',
+  },
+  {
+    id : 3,
+    featureName : 'Dishwasher',
+  },
+  {
+    id : 4,
+    featureName : 'Spa',
+  },
+  {
+    id : 5,
+    featureName : 'Balcony',
+  },
+  {
+    id : 6,
+    featureName : 'Pool',
+  },
+  {
+    id : 7,
+    featureName : 'Fitness Center',
+  },
+  {
+    id : 8,
+    featureName : 'Valet Parking',
+  },
+];
+
+export const STYLE_FILTER = [
+  {
+    id : 1,
+    styleName : 'A-Frame',
+  },
+  {
+    id : 2,
+    styleName : 'Dome',
+  },
+  {
+    id : 3,
+    styleName : 'Cottage',
+  },
+  {
+    id : 4,
+    styleName : 'Spanish',
+  },
+]

@@ -3,10 +3,10 @@
 import React from "react";
 const Input = ({ ...props }) => {
   return (
-    <div className="input bg-white flex items-center gap-2">
-      <label htmlFor="email" className="">
+    <div className="rounded-[6px] bg-white flex items-center gap-2">
+      {props.icons && <label htmlFor="email" className="pl-6">
         {props.icons}
-      </label>
+      </label>}
       <input
         type={props.type}
         name={props.name}
@@ -15,6 +15,7 @@ const Input = ({ ...props }) => {
         placeholder={props.placeholder}
         className={`${props.inputClass}`}
         onChange={props.onChange}
+        {...props}
       />
     </div>
   );

@@ -25,7 +25,7 @@ const Dropdown = ({ ...props }) => {
         <div className="w-full justify-between flex items-center">
           <div className="flex text-base gap-1">
             {props.icon && props.icon}
-            {props.data}
+            {props.buttonText}
           </div>
           <svg className="w-2.5 h-2.5 ms-3 justify-self-end" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="#ADA7A7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
@@ -40,36 +40,16 @@ const Dropdown = ({ ...props }) => {
           className="w-full z-10 divide-y divide-gray-100 rounded-lg shadow"
         >
           <ul className="py-2 text-sm" aria-labelledby="dropdownDelayButton">
-            <li>
+            {props.options.map((item,index)=>(
+              <li key={index}>
               <button
-                className="block px-4 py-2 hover:bg-gray-200 w-full text-left"
-                onClick={() => handleOptionClick('Dashboard')}
+                className="capitalize block px-4 py-2 hover:bg-secondary-blue hover:text-white w-full text-left"
+                onClick={() => handleOptionClick(item)}
               >
-                Dashboard
+                {item}
               </button>
             </li>
-            <li>
-              <button
-                className="block px-4 py-2 hover:bg-gray-200 w-full text-left"
-                onClick={() => handleOptionClick('Dashboard')}
-              >
-                Dashboard
-              </button>
-            </li><li>
-              <button
-                className="block px-4 py-2 hover:bg-gray-200 w-full text-left"
-                onClick={() => handleOptionClick('Dashboard')}
-              >
-                Dashboard
-              </button>
-            </li><li>
-              <button
-                className="block px-4 py-2 hover:bg-gray-200 w-full text-left"
-                onClick={() => handleOptionClick('Dashboard')}
-              >
-                Dashboard
-              </button>
-            </li>
+            ))}
           </ul>
         </div>
       )}

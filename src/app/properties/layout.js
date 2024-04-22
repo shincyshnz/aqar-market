@@ -32,6 +32,8 @@ export default function PropertiesLayout({
         </div>
       </nav>
 
+      {/* Filter */}
+
       {children}
     </section>
   )

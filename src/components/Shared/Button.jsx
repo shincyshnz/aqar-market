@@ -7,6 +7,7 @@ const Button = ({...props}) => {
         <div className="flex-center gap-2">
         {props.icons && props.icons}
         {props.text}
+        {/* {...props} */}
         </div>
     </button>
   )
